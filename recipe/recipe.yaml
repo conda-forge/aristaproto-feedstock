@@ -1,5 +1,5 @@
 context:
-  version: "0.1.5"
+  version: "0.1.6"
 
 package:
   name: aristaproto
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/aristaproto/aristaproto-${{ version }}.tar.gz
-  sha256: 8e736b3739bdc74989e6df5a146168570473a05ea150469cba45705be69c177f
+  sha256: 413f910801ec8c5d3a743c0b673829bb75ab1d4f7ec2dba1c4d9740604ad559c
 
 build:
   noarch: python
@@ -28,11 +28,11 @@ requirements:
 tests:
   - python:
       imports:
-      - aristaproto
+        - aristaproto
       pip_check: true
       python_version:
-      - ${{ python_min }}.*
-      - "*"
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://github.com/aristanetworks/python-aristaproto
